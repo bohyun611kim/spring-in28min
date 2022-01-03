@@ -17,7 +17,8 @@ public class SpringIn5StepsScopeApplication {
 
     ApplicationContext applicationContext =
         SpringApplication.run(SpringIn5StepsScopeApplication.class, args);
-
+    
+    // 싱글톤이 아닌 빈 인스턴스를 요청마다 생성  
     PersonDAO personDao = applicationContext.getBean(PersonDAO.class);
 
     PersonDAO personDao2 = applicationContext.getBean(PersonDAO.class);
