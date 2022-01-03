@@ -23,7 +23,7 @@ public class SpringIn5StepsComponentScanApplication {
 
     ComponentDAO componentDAO = applicationContext.getBean(ComponentDAO.class);
 
-    LOGGER.info("생성된 빈 : {}", componentDAO);
+    LOGGER.info("{}", componentDAO);
 
   }
 }
