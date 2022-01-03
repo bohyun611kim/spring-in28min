@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 public class QuickSortAlgorithm implements SortAlgorithm {
   public int[] sort(int[] numbers) {
     // Logic for Quick Sort
+    System.out.println("quick 정렬 호출...");
     return numbers;
   }
 }

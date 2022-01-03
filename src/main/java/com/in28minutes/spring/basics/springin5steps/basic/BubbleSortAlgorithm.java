@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 public class BubbleSortAlgorithm implements SortAlgorithm {
   public int[] sort(int[] numbers) {
     // Logic for Bubble Sort
+    System.out.println("bubble 정렬 호출...");
     return numbers;
   }
 }
