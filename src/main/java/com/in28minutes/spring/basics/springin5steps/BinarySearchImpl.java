@@ -7,11 +7,11 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
+@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON) // 기본 싱글톤 
 public class BinarySearchImpl {
 
   @Autowired
-  @Qualifier("bubble")
+  @Qualifier("bubble")// 구현체를 선택하고 넣어준다. 
   private SortAlgorithm sortAlgorithm;
 
   public int binarySearch(int[] numbers, int numberToSearchFor) {
