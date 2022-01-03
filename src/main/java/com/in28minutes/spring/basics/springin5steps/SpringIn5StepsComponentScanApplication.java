@@ -6,11 +6,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
-
 import com.in28minutes.spring.basics.componentscan.ComponentDAO;
 
 @SpringBootApplication
-@ComponentScan("com.in28minutes.spring.basics.componentscan") // 빈 어노테이션을 검색해서 빈을 생성한다. 
+@ComponentScan("com.in28minutes.spring.basics.componentscan")
 public class SpringIn5StepsComponentScanApplication {
 
   private static Logger LOGGER =
@@ -23,7 +22,7 @@ public class SpringIn5StepsComponentScanApplication {
 
     ComponentDAO componentDAO = applicationContext.getBean(ComponentDAO.class);
 
-    LOGGER.info("생성된 빈 : {}", componentDAO);
+    LOGGER.info("{}", componentDAO);
 
   }
 }
